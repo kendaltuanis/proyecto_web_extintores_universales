@@ -1,0 +1,179 @@
+<header>
+
+  <form action="#" method="post" id="newmember">
+    <div class="modal fade" id="becomeamember" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">Registrarse</h4>
+          </div>
+          <div class="modal-body form-inline">
+            <div class="form-group has-feedback">
+              <label class="control-label" for="namelabel">Nombre</label>
+              <input type="text" class="form-control" id="firstnameinput" aria-describedby="firstnameinput" required="">
+              <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+            </div>
+
+            <div class="form-group has-feedback">
+              <label class="control-label" for="lastnamelabel">Apellidos</label>
+              <input type="text" class="form-control" id="lastnameinput" aria-describedby="lastnameinput" required="">
+              <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+            </div>
+
+            <div class="form-group has-feedback">
+              <label class="control-label" for="bussineslabel">Empresa</label>
+              <input type="text" class="form-control" id="postcodeinput" aria-describedby="postcodeinput">
+              <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+            </div>
+
+            <div class="form-group has-feedback">
+              <label class="control-label" for="emaillabel">Correo electrónico</label>
+              <input type="email" class="form-control" id="emailinput" aria-describedby="emailinput" required="">
+              <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+            </div>
+
+            <div class="form-group has-feedback">
+              <label class="control-label" for="passwordlabel">Contraseña</label>
+              <input type="password" class="form-control" id="passwordinput" aria-describedby="passwordinput" required="">
+              <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+            </div>
+
+            <div class="form-group has-feedback">
+              <label class="control-label" for="re-enterpasswordlabel">Re-ingresa Contraseña</label>
+              <input type="password" class="form-control" id="re-enterpasswordinput" aria-describedby="re-enterpasswordinput" required="">
+              <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+            </div>
+            <br/><br/>
+
+            <div class="form-group">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Registrar</button>
+            </div>
+
+          </div>
+          <!-- end modal-Body -->
+
+        </div>
+      </div>
+    </div>
+    <!-- end become a member modal -->
+  </form>
+
+  <form id="logingform" action="/" method="post">
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Cerrar</span></button>
+            <h4 class="modal-title" id="myModalLabel">Iniciar Sesión</h4>
+          </div>
+
+          <div class="modal-body">
+            <div class="form-group has-feedback">
+              <label class="control-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status" placeholder="Correo electrónico">
+              <span class="glyphicon glyphicon-user form-control-feedback" aria-hidden="true"></span>
+            </div>
+
+            <div class="form-group has-feedback">
+              <label class="control-label">Contraseña</label>
+              <input type="password" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status" placeholder="Contraseña">
+              <span class="glyphicon glyphicon-text-color form-control-feedback" aria-hidden="true"></span>
+            </div>
+
+            <button type="button" class="btn btn-primary">Iniciar</button>
+            <input type="checkbox" value="remember" id="rememberme">Recuerdame<br/><br/>
+
+            <a href="#">¿Olvidó su contraseña?</a>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <nav class="navbar navbar-default navbar-fixed-top navbar-lower" role="navigation" style="background-color: #572828">
+    <div class="container">
+      <div class="navbar-header">
+        <div class="pull-left">
+          <div class="navbar-btn">
+            <span class="copyright social">
+                    <i class="fa fa-twitter fsize20"></i>
+                    <i class="fa fa-google-plus fsize20"></i>
+                    <i class="fa fa-facebook fsize20"></i>
+                    </span>
+            </span>
+          </div>
+        </div>
+        <div class="pull-right">
+          <button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#becomeamember">
+         <i class="fa fa-sign-in"></i>
+         <span class="hidden-sm hidden-xs">Registrarse</span>
+         </button>
+          <button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#login">
+         <i class="fa fa-lock"></i>
+        <span class="hidden-sm hidden-xs">Iniciar sesión</span>
+        </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <nav class="navbar navbar-default navbar-fixed-top first-nav-bar" style="background-color: white; border-bottom: solid 1px brown ;border-style: solid; ">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="glyphicon glyphicon-chevron-down"></span>	</button> <!-- <span class="glyphicon glyphicon-chevron-down"></span><!-- Responsive button icon -->
+				
+        <a class="navbar-brand" href="/proyecto/Views/Home/"><img src="./../../Content/images/logo.png" class="logo-css" alt="Dispute Bills" /> </a>
+        <a rel="nofollow" rel="noreferrer" class="navbar-brand navbar-style" href="/proyecto/Views/Home">Extintores Universales</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="/proyecto/Views/Home/">Inicio <span class="sr-only">(current)</span></a></li>
+          <li><a href="/proyecto/Views/Home/About.html">¿Quienes somos? <span class="sr-only">(current)</span></a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rutas<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="/proyecto/Views/Home/Routes.html#alajuela">Alajuela</a></li>
+              <li><a href="/proyecto/Views/Home/Routes.html#san_ramon">San Ramón</a></li>
+              <li><a href="/proyecto/Views/Home/Routes.html#san_carlos">San Carlos</a></li>
+              <li><a href="/proyecto/Views/Home/Routes.html#guapiles">Guápiles</a></li>
+              <li><a href="/proyecto/Views/Home/Routes.html#sur">Zona sur</a></li>
+              <li><a href="/proyecto/Views/Home/Routes.html#guanacaste">Guanacaste</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Productos(Compra en línea) <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="/proyecto/Views/Products/Brands.html"><strong>Marcas que trabajamos</strong></a></li>
+              <li><a href="/proyecto/Views/Products/List-Products.html">Extintores (Certificación UL)</a></li>
+              <li><a href="/proyecto/Views/Products/List-Products.html">Extintores (Sin Certificación UL)</a></li>
+              <li><a href="/proyecto/Views/Products/List-Products.html">Carretas de polvo químico</a></li>
+              <li><a href="/proyecto/Views/Products/List-Products.html">Gabinetes</a></li>
+              <li><a href="/proyecto/Views/Products/List-Products.html">Accesorios</a></li>
+              <li><a href="/proyecto/Views/Products/List-Products.html">Rotulación</a></li>
+              <li><a href="/proyecto/Views/Products/List-Products.html">Primeros auxilios</a></li>
+              <li><a href="/proyecto/Views/Products/List-Products.html">Kit de seguridad</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Información <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="/proyecto/Views/Products/Promo.html">Promociones</a></li>
+              <li><a href="/proyecto/Views/Home/Articles.html">Artículos (uso del extintor)</a></li>
+              <li><a href="/proyecto/Views/Home/Faq.html">Preguntas frecuentes</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right social">
+          <li><a href="/proyecto/Views/Products/Checkout.html"><i class="fa fa-shopping-cart"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>

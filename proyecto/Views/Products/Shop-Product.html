@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="./../../Content/images/extintoresIcon.ico">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="./../../Content/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./../../Content/js/libs/modernizr-2.5.3.min.js"></script>
+	<script type="text/javascript" script-name="berkshire-swash" src="http://use.edgefonts.net/berkshire-swash.js"></script>
+
+	<link rel="stylesheet" href="./../../Content/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./../../Content/style.css">
+	<link rel="stylesheet" href="./../../Content/font-awesome-4.7.0/css/font-awesome.min.css">
+
+
+	<title>Extintores Universales - Descripción Producto</title>
+</head>
+
+<body>
+	<!--Acá se carga el header-->
+	<header data-load="./../Shared/header.html">
+	</header>
+
+	<div class="container container-with-margin">
+
+		<ol class="breadcrumb">
+			<li><a href="/proyecto/Views/Home">Inicio</a></li>
+			<li class="active">Descripción Producto</li>
+		</ol>
+		<div class="container">
+			<div class="row">
+				<div class="main col-sm-12">
+					<h1>Producto de compra</h1>
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="image_responsive">
+								<img src="./../../Content/images/product-1.jpg" alt="">
+							</div>
+						</div>
+						<div class="col-sm-8">
+							<h2>Descripción</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem debitis enim facilis porro quia in voluptates praesentium,
+								cupiditate, dolorum. Facilis minus, quidem! Id perspiciatis labore praesentium voluptatibus assumenda odio, magni.</p>
+							<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non sint beatae delectus obcaecati eveniet nulla voluptate
+								odio est laborum veniam? Natus nemo provident, voluptate molestias sint, nam dolor blanditiis minus!</p>
+							<hr>
+							<div class="row">
+								<form role="form" class="clearfix">
+									<div class="col-sm-8">
+										<div class="form-group">
+											<label>Cantidad</label>
+											<input type="number" class="form-control" value="1">
+										</div>
+									</div>
+									<div class="col-sm-8">
+										<div class="form-group">
+											<label>Tamaño</label>
+											<select class="form-control">
+														<option>10lbs</option>
+														<option>20lbs</option>
+													</select>
+										</div>
+									</div>
+									<div class="col-sm-12 text-right">
+									</div>
+								</form>
+							</div>
+							<div class="clearfix">
+								<span><i></i>₡35.000,00</span>
+								<a href="#" class="btn btn-sm btn-default-transparent">Agregar<i class="fa fa-shopping-cart"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Acá se carga el footer-->
+	<footer data-load="./../Shared/footer.html">
+	</footer>
+
+	<script>
+		$(function () {
+			$("[data-load]").each(function () {
+				$(this).load($(this).data("load"), function () {
+				});
+			});
+		})
+	</script>
+
+	<script>
+		var anchor = document.querySelectorAll('button');
+
+		[].forEach.call(anchor, function (anchor) {
+			var open = false;
+			anchor.onclick = function (event) {
+				event.preventDefault();
+				if (!open) {
+					this.classList.add('close');
+					open = true;
+				}
+				else {
+					this.classList.remove('close');
+					open = false;
+				}
+			}
+		});
+	</script>
+
+</body>
+
+</html>

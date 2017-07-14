@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="./../../Content/images/extintoresIcon.ico">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="./../../Content/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./../../Content/js/libs/modernizr-2.5.3.min.js"></script>
+	<script type="text/javascript" script-name="berkshire-swash" src="http://use.edgefonts.net/berkshire-swash.js"></script>
+
+	<link rel="stylesheet" href="./../../Content/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./../../Content/style.css">
+	<link rel="stylesheet" href="./../../Content/font-awesome-4.7.0/css/font-awesome.min.css">
+
+	<title>Extintores Universales - Pago de productos</title>
+</head>
+
+<body>
+	<!--Acá se carga el header-->
+	<header data-load="./../Shared/header.html">
+	</header>
+
+	<div class="container container-with-margin">
+
+		<ol class="breadcrumb">
+			<li><a href="/proyecto/Views/Home">Inicio</a></li>
+			<li class="active">Información de pago</li>
+		</ol>
+
+			<div class="container">
+				<div class="row">
+					<div class="main col-sm-12">
+						<h1>Pago de productos</h1>
+						<table class="table">
+							<thead>
+								<tr>
+									<th>Producto </th>
+									<th>Precio </th>
+									<th>Cantidad</th>
+									<th>Total </th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td> <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas inventore modi.</small></td>
+									<td>₡10.000,00 </td>
+									<td>
+										<div class="form-group">
+											<input type="text" class="form-control" value="2" disabled>
+										</div>
+									</td>
+									<td>₡20.000,00 </td>
+								</tr>
+								<tr>
+									<td><small>Quas inventore modi</small></td>
+									<td> ₡12.000,00 </td>
+									<td>
+										<div class="form-group">
+											<input type="text" class="form-control" value="3" disabled>
+										</div>
+									</td>
+									<td>₡36.000,00</td>
+								</tr>
+								<tr>
+									<td><small>Fugiat nemo enim officiis repellendus</small></td>
+									<td> ₡5.000,00 </td>
+									<td>
+										<div class="form-group">
+											<input type="text" class="form-control" value="3" disabled>
+										</div>
+									</td>
+									<td>₡15.000,00 </td>
+								</tr>
+								<tr>
+									<td colspan="3">Subtotal</td>
+									<td>₡71.000,00</td>
+								</tr>
+								<tr>
+									<td colspan="3">Total 8 productos</td>
+									<td >₡71.000,00</td>
+								</tr>
+							</tbody>
+						</table>
+						<fieldset>
+							<legend>Información de pago</legend>
+							<form role="form" class="form-horizontal" id="billing-information">
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="form-group">
+											<label for="billingFirstName" class="col-md-2 control-label">Nombre</label>
+											<div class="col-md-10">
+												<input type="text" class="form-control" id="billingFirstName" value="Ingrese Nombre">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="billingLastName" class="col-md-2 control-label">Apellidos</label>
+											<div class="col-md-10">
+												<input type="text" class="form-control" id="billingLastName" value="Ingrese Apellidos">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="billingTel" class="col-md-2 control-label">Teléfono</label>
+											<div class="col-md-10">
+												<input type="text" class="form-control" id="billingTel" value="Ingrese Teléfono">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="billingemail" class="col-md-2 control-label">Correo electrónico</label>
+											<div class="col-md-10">
+												<input type="email" class="form-control" id="billingemail" value="Ingrese correo electrónico">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="form-group">
+											<label for="billingAddress1" class="col-md-2 control-label">Dirección 1</label>
+											<div class="col-md-10">
+												<input type="text" class="form-control" id="billingAddress1" value="Ingrese Dirección">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="billingAddress2" class="col-md-2 control-label">Dirección 2</label>
+											<div class="col-md-10">
+												<input type="text" class="form-control" id="billingAddress2" value="Ingrese Dirección">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="billingCity" class="col-md-2 control-label">Ciudad/Pueblo</label>
+											<div class="col-md-10">
+												<input type="text" class="form-control" id="billingCity" value="Ingrese ciudad/pueblo">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="billingPostalCode" class="col-md-2 control-label">Detalles de calle/casa/...</label>
+											<div class="col-md-10">
+												<input type="text" class="form-control" id="billingPostalCode" value="Ingrese los detalles que crea necesario para llegar al lugar">
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</fieldset>
+						<div class="text-right">
+							<a href="/proyecto/Views/Products/Checkout_Payment.html" class="btn btn-group btn-default">Ir a Finalizar compra<i class="icon-right-open-big"></i></a>
+						</div>
+						<br />
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+
+	<!--Acá se carga el footer-->
+	<footer data-load="./../Shared/footer.html">
+	</footer>
+
+
+	<!--Esto funciona para cargar el header y/o footer-->
+	<script>
+		$(function () {
+			$("[data-load]").each(function () {
+				$(this).load($(this).data("load"), function () {
+				});
+			});
+		})
+	</script>
+
+	<script>
+		var anchor = document.querySelectorAll('button');
+
+		[].forEach.call(anchor, function (anchor) {
+			var open = false;
+			anchor.onclick = function (event) {
+				event.preventDefault();
+				if (!open) {
+					this.classList.add('close');
+					open = true;
+				}
+				else {
+					this.classList.remove('close');
+					open = false;
+				}
+			}
+		});
+	</script>
+
+</body>
+
+</html>

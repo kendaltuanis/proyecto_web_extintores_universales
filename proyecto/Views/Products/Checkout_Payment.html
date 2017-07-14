@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="./../../Content/images/extintoresIcon.ico">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="./../../Content/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./../../Content/js/libs/modernizr-2.5.3.min.js"></script>
+	<script type="text/javascript" script-name="berkshire-swash" src="http://use.edgefonts.net/berkshire-swash.js"></script>
+
+	<link rel="stylesheet" href="./../../Content/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./../../Content/style.css">
+	<link rel="stylesheet" href="./../../Content/font-awesome-4.7.0/css/font-awesome.min.css">
+
+	<title>Extintores Universales - Metodo de pago</title>
+</head>
+
+<body>
+	<!--Acá se carga el header-->
+	<header data-load="./../Shared/header.html">
+	</header>
+
+	<div class="container container-with-margin">
+		<ol class="breadcrumb">
+			<li><a href="/proyecto/Views/Home">Inicio</a></li>
+			<li class="active">Método de pago</li>
+		</ol>
+			<div class="container">
+				<div class="row">
+					<div class="main col-md-12">
+						<h1 class="page-title">Método de pago</h1>
+						<div class="separator-2"></div>
+						<fieldset>
+							<legend>Pago</legend>
+							<form role="form" class="form-horizontal" id="payment-information">
+								<div class="row">
+									<div class="col-lg-3">
+										<div class="radio">
+											<label>
+													<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+													Tarjeta de crédito<i class="fa fa-cc-visa pl-10"></i><i class="fa fa-cc-amex pl-10"></i><i class="fa fa-cc-mastercard pl-10"></i>
+												</label>
+										</div>									
+									</div>
+									<div class="col-lg-9">
+										<div class="form-group">
+											<label for="paymentFirstName" class="col-md-3 control-label">Nombre</label>
+											<div class="col-md-9">
+												<div class="row">
+													<div class="col-md-4">
+														<input type="text" class="form-control" id="paymentFirstName" value="Nombre">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="paymentLastName" class="col-md-3 control-label">Apellidos</label>
+											<div class="col-md-9">
+												<div class="row">
+													<div class="col-md-4">
+														<input type="text" class="form-control" id="paymentLastName" value="Apellidos">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label">Escoge tarjeta</label>
+											<div class="col-md-9">
+												<div class="row">
+													<div class="col-md-4">
+														<select class="form-control">
+																<option value="visa" selected="selected">VISA</option>
+																<option value="master-card">Master Card</option>
+																<option value="american-express">American Express</option>
+															</select>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label">Número de tarjeta</label>
+											<div class="col-md-9">
+												<div class="row">
+													<div class="col-xs-6 col-sm-2">
+														<input type="text" class="form-control">
+													</div>
+													<div class="col-xs-6 col-sm-2">
+														<input type="text" class="form-control">
+													</div>
+													<div class="clearfix space-bottom visible-xs"></div>
+													<div class="col-xs-6 col-sm-2">
+														<input type="text" class="form-control">
+													</div>
+													<div class="col-xs-6 col-sm-2">
+														<input type="text" class="form-control">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label">Fecha de expiración</label>
+											<div class="col-md-9">
+												<div class="row">
+													<div class="col-xs-6 col-sm-2">
+														<select class="form-control">
+																<option value="01" selected="selected">01</option>
+																<option value="03">02</option>
+																<option value="03">03</option>
+																<option value="04">04</option>
+																<option value="05">05</option>
+																<option value="06">06</option>
+																<option value="07">07</option>
+																<option value="08">08</option>
+																<option value="09">09</option>
+																<option value="10">10</option>
+																<option value="11">11</option>
+																<option value="12">12</option>
+															</select>
+													</div>
+													<div class="col-xs-6 col-sm-2">
+														<select class="form-control">
+																<option value="2014" selected="selected">2014</option>
+																<option value="2015">2015</option>
+																<option value="2016">2016</option>
+																<option value="2017">2017</option>
+																<option value="2018">2018</option>
+																<option value="2019">2019</option>
+																<option value="2020">2020</option>
+																<option value="2021">2021</option>
+																<option value="2022">2022</option>
+																<option value="2023">2023</option>
+																<option value="2024">2024</option>
+																<option value="2025">2025</option>
+															</select>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label">CVS</label>
+											<div class="col-md-9">
+												<div class="row">
+													<div class="col-xs-6 col-sm-2">
+														<input type="text" class="form-control">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>						
+								<div class="row">
+									<div class="col-lg-3">
+										<div class="radio">
+											<label>
+													<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+													Paypal<i class="fa fa-cc-paypal pl-10"></i>
+												</label>
+										</div>									
+									</div>
+									<div class="col-lg-9">
+										<div class="form-group">
+											<label for="paymentEmail" class="col-md-3 control-label">Correo electrónico</label>
+											<div class="col-md-9">
+												<div class="row">
+													<div class="col-md-8">
+														<input type="email" class="form-control" id="paymentEmail" value="Correo electrónico">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>		
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="radio">
+											<label>
+													<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+													En efectivo
+												</label>
+										</div>										
+									</div>
+								</div>
+							</form>
+						</fieldset>
+						<div class="text-right">
+							<a href="/proyecto/Views/Products/Checkout.html" class="btn btn-group btn-default"><i class="icon-left-open-big"></i> Ir atrás</a>
+							<a href="#" class="btn btn-group btn-default">Finalizar compra<i class="icon-right-open-big"></i></a>
+						</div><br />						
+					</div>
+				</div>
+			</div>
+	</div>
+
+	<!--Acá se carga el footer-->
+	<footer data-load="./../Shared/footer.html">
+	</footer>
+
+	<!--Esto funciona para cargar el header y/o footer-->
+	<script>
+		$(function () {
+			$("[data-load]").each(function () {
+				$(this).load($(this).data("load"), function () {
+				});
+			});
+		})
+	</script>
+
+	<script>
+		var anchor = document.querySelectorAll('button');
+
+		[].forEach.call(anchor, function (anchor) {
+			var open = false;
+			anchor.onclick = function (event) {
+				event.preventDefault();
+				if (!open) {
+					this.classList.add('close');
+					open = true;
+				}
+				else {
+					this.classList.remove('close');
+					open = false;
+				}
+			}
+		});
+	</script>
+
+</body>
+
+</html>

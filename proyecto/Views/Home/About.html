@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="./../../Content/images/extintoresIcon.ico">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="./../../Content/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./../../Content/js/libs/modernizr-2.5.3.min.js"></script>
+	<script type="text/javascript" script-name="berkshire-swash" src="http://use.edgefonts.net/berkshire-swash.js"></script>
+
+	<link rel="stylesheet" href="./../../Content/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./../../Content/style.css">
+	<link rel="stylesheet" href="./../../Content/font-awesome-4.7.0/css/font-awesome.min.css">
+
+  <title>Extintores Universales - A cerca </title>
+</head>
+
+<body>
+  <!--Acá se carga el header-->
+  <header data-load="./../Shared/header.html">
+  </header>
+
+  <div class="container container-with-margin">
+
+    <ol class="breadcrumb">
+      <li><a href="/proyecto/Views/Home/">Inicio</a></li>
+      <li class="active">¿Quienes somos?</li>
+    </ol>
+
+    <h4><strong>A cerca de nosotros</strong></h3>
+      <div class="row">
+
+        <div class="col-sm-6">
+          <p>Extintores Universales se califica por brindar el mejor servicio para todos nuestros clientes.</p>
+          <p>Extintores Universales se califica por brindar el mejor servicio para todos nuestros clientes.</p>
+          <p>Extintores Universales se califica por brindar el mejor servicio para todos nuestros clientes.</p>
+          <p>Extintores Universales se califica por brindar el mejor servicio para todos nuestros clientes.</p>
+          <p>Extintores Universales se califica por brindar el mejor servicio para todos nuestros clientes.</p>
+
+        </div>
+
+        <div class="col-sm-6 image_responsive">
+          <img src="./../../Content/images/portfolio-1.jpg"  alt="nosotros">
+        </div>
+
+      </div>
+
+      <hr />
+
+  </div>
+
+  <!--Acá se carga el footer-->
+  <footer data-load="./../Shared/footer.html">
+  </footer>
+
+  <!--Esto funciona para cargar el header y/o footer-->
+  <script>
+    $(function () {
+      $("[data-load]").each(function () {
+        $(this).load($(this).data("load"), function () {
+        });
+      });
+    })
+  </script>
+
+  <script>
+    var anchor = document.querySelectorAll('button');
+
+    [].forEach.call(anchor, function (anchor) {
+      var open = false;
+      anchor.onclick = function (event) {
+        event.preventDefault();
+        if (!open) {
+          this.classList.add('close');
+          open = true;
+        }
+        else {
+          this.classList.remove('close');
+          open = false;
+        }
+      }
+    });
+  </script>
+
+</body>
+
+</html>
