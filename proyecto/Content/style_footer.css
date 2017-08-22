@@ -1,0 +1,170 @@
+
+/* Acá doy color y diseño al footer usando el id*/
+
+#myFooter {
+  background-color: #182c39;
+  color: white;
+  padding-top: 20px;
+}
+
+#myFooter div div label {
+  font-size: 1em;
+}
+
+#myFooter .row {
+  margin: 0 70px;
+}
+
+#myFooter .footer-copyright {
+  background-color: #10222e;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  text-align: center;
+}
+
+#myFooter .footer-copyright p {
+  margin: 10px;
+  color: #ccc;
+}
+
+#myFooter .container {
+  width: auto;
+}
+
+#myFooter .fa {
+  font-size: 2em;
+  margin-right: 15px;
+  margin-left: 20px;
+  background-color: white;
+  color: #182c39;
+  border-radius: 51%;
+  padding: 10px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 31px;
+  text-decoration: none;
+  transition: color .2s;
+}
+@media screen and (max-width: 767px) {
+  #myFooter {
+    text-align: center;
+  }
+
+  #myFooter .row {
+    margin: 0;
+  }
+}
+
+/* CARACTERÍSTICAS PARA EL -FORM- EN EL FOOTER*/
+
+.footer-distributed {
+  font: bold 1.1em sans-serif;
+  text-align: center;
+
+  overflow: hidden;
+}
+
+
+.footer-distributed form {
+  display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea {
+  display: block;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: #1f2022;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  border: none;
+  resize: none;
+
+  font: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  color: #d1d2d2;
+
+  width: 250px;
+  padding: 18px;
+}
+
+.footer-distributed::-webkit-input-placeholder {
+  color: #5c666b;
+}
+
+.footer-distributed::-moz-placeholder {
+  color: #5c666b;
+  opacity: 1;
+}
+
+.footer-distributed:-ms-input-placeholder {
+  color: #5c666b;
+}
+
+.footer-distributed form button {
+  padding: 10px 80px;
+}
+
+.footer-distributed form input {
+  height: 30px;
+  margin-bottom: 15px;
+}
+
+.footer-distributed form textarea {
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.footer-distributed form button {
+  border-radius: 3px;
+  background-color: #33383b;
+  color: #ffffff;
+  border: 0;
+
+  font-weight: bold;
+  float: right;
+}
+
+/* Con estas 2 abarco bien los objetivos para las diferentes tipos de pantallas */
+@media (max-width: 1000px) {
+
+  .footer-distributed form input,
+  .footer-distributed form textarea {
+    width: 180px;
+  }
+
+  .footer-distributed form button {
+    padding: 10px 80px;
+  }
+
+}
+@media (max-width: 800px) {
+  .footer-distributed {
+    padding: 30px;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right {
+    float: none;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .footer-distributed .footer-left {
+    margin-bottom: 40px;
+  }
+
+  .footer-distributed form {
+    margin-top: 30px;
+
+  }
+
+  .footer-distributed form {
+    display: block;
+  }
+
+  .footer-distributed form button {
+    float: none;
+  }
+}

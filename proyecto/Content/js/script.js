@@ -1,9 +1,10 @@
-
-const saludo = 'Bienvenido ';
+const saludo = 'Bienvenido(a) ';
 const error_claves = 'Las contraseñas no coinciden';
 const sesion_incorrecta = 'Correo o contraseña no son correctos';
 const error_longitud_clave = 'La contraseña deberá ser mayor o igual a 6 carácteres';
 const error_longitud_campos = 'Alguno(s) de los campos están vacios o son muy cortos';
+const nombre_item = 'nombre';
+const persona_online_item = 'persona_online';
 
 function VerificarEntradas() {
 
@@ -34,8 +35,7 @@ function Registrar() {
         empresa: $("#empresa").val(),
         correo: $("#correo").val(),
         clave: $("#clave").val(),
-    }
-    ];
+    }];
 
     var guardado = JSON.parse(localStorage.getItem("persona"));
 
@@ -61,32 +61,44 @@ function IniciarSesion() {
     $.each(personas, function (key, value) {
         console.log(value.correo + " clave: " + value.clave);
         if (correo == value.correo && clave == value.clave) {
-            localStorage.setItem("nombre", value.nombre);
-            localStorage.setItem("persona_online", correo);
+
+            if ($('#recuerdame').is(":checked")) {
+                localStorage.setItem(nombre_item, value.nombre);
+                localStorage.setItem(persona_online_item, correo);
+            } else {
+                sessionStorage.setItem(nombre_item, value.nombre);
+                sessionStorage.setItem(persona_online_item, correo);
+            }
+
             VerificarSesion();
             isEntro = 1;
         }
     });
-    if (isEntro==0) {
+    if (isEntro == 0) {
         alert(sesion_incorrecta);
     }
 }
 
 function VerificarSesion() {
-    var online = localStorage.getItem("persona_online");
+
+    var online = (localStorage.getItem(persona_online_item)==null || localStorage.getItem(persona_online_item)=="0") ? sessionStorage.getItem(persona_online_item) : localStorage.getItem(persona_online_item);    
 
     if (online == 0 || online == null) {
         return;
     }
+
+    var nombre = (localStorage.getItem(nombre_item)==null || localStorage.getItem(nombre_item)=="0") ? sessionStorage.getItem(nombre_item) : localStorage.getItem(nombre_item);
+
     $('#lado_derecho').html($('#reemplazo').html());
-    $('#name').text(saludo + localStorage.getItem("nombre"));
+    $('#name').text(saludo + nombre);
 
 }
 
-function CerrarSesion() {
+function CerrarSesion() {  
+
     localStorage.setItem("persona_online", "0");
     localStorage.setItem("nombre", "0");
-    window.location.href = "http://localhost/proyecto_web/proyecto/Views/Home/";
+    sessionStorage.setItem("persona_online", "0");
+    sessionStorage.setItem("nombre", "0");
+    window.location.href = "http://localhost/proyecto/Views/Home/Index.html";
 }
-
-

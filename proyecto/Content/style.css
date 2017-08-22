@@ -1,36 +1,37 @@
+/*Revisar*/
 .navbar-default .navbar-toggle {
-    border-color: transparent;
+  border-color: transparent;
 }
 
-/* Título y letra del header*/
+/* Título y letra del logo*/
 .navbar-style {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   border: none;
-  font: normal 30px/1 "berkshire-swash", Helvetica, sans-serif;
+  font: normal 2.3em "berkshire-swash", Helvetica, sans-serif;
   color: rgba(255,0,0,1) !important;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   text-shadow: 0 1px 2px rgba(0,0,0,1) !important;
 }
-
-
 @media screen and (max-width: 2000px) {
-     .navbar-brand > img {
-      width: 60px;
-      height: 60px;
-     }
-     .first-nav-bar{
-      margin-top:50px;
-    }
-
- .pull-right {
-  position: absolute;
-  top: 0px;
-  right: 5px;
+  .navbar-brand > img {
+    width: 60px;
+    height: 60px;
   }
-  .container-with-margin{
+
+  .first-nav-bar {
+    margin-top: 50px;
+  }
+
+  .pull-right {
+    position: absolute;
+    top: 0;
+    right: 5px;
+  }
+
+  .container-with-margin {
     margin-top: 140px;
   }
 
@@ -38,131 +39,113 @@
 
 /*  no optimizado */
 @media screen and (max-width: 1024px) {
-     .navbar-brand > img {
-      width: 70px;
-      height: 70px;
-    }
-   .first-nav-bar{
-      margin-top:50px;
-    }
-    .container-with-margin{
+  .navbar-brand > img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .first-nav-bar {
+    margin-top: 50px;
+  }
+
+  .container-with-margin {
     margin-top: 195px;
   }
 }
-/*  no optimizado */
 @media screen and (max-width: 768px) {
-     .navbar-brand > img {
-      width: 60px;
-      height: 60px;
-    }
+  .navbar-brand > img {
+    width: 60px;
+    height: 60px;
+  }
 
-    .first-nav-bar{
-      margin-top:50px;
-    }
-    .container-with-margin{
+  .first-nav-bar {
+    margin-top: 50px;
+  }
+
+  .container-with-margin {
     margin-top: 195px;
   }
 
 }
-
 @media screen and (max-width: 480px) {
-     .navbar-brand > img {
-      width: 50px;
-      height: 50px;
-    }
-     .navbar-brand {
-       font: normal 35px/1 "berkshire-swash", Helvetica, sans-serif;
-      }
-       .navbar-toggle > span{
-           padding-top: 0px;
-           position: static;
-           padding-left: 10px;
-           
-      }
-       .navbar-fixed-bottom, .navbar-fixed-top {
-         position: relative;
+  .navbar-brand > img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .navbar-toggle > span {
+    padding-top: 0;
+    position: static;
+    padding-left: 10px;
+
+  }
+
+  .navbar-fixed-bottom,
+  .navbar-fixed-top {
+    position: relative;
     min-height: 50px;
     margin-bottom: 20px;
     border: 1px solid transparent;
-      } 
-      .first-nav-bar{
-       margin-top: 0px;
-       top:0px;
-    }
-    .navbar-toggle{
-      position: absolute;
-      margin-left: 50%;
-      margin-top: 50px;
-      z-index: 2;
-    }
-.ul.nav li.dropdown:hover > ul.dropdown-menu {
+  }
+
+  .first-nav-bar {
+    margin-top: 0;
+    top: 0;
+  }
+
+  .navbar-toggle {
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 50px;
+    z-index: 2;
+  }
+
+  .ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
   }
-  .container-with-margin{
-    margin-top: 0px;
+
+  .container-with-margin {
+    margin-top: 0;
   }
 
 }
-
-@media screen and (max-width: 444px) {
-     .navbar-brand > img {
-      width: 50px;
-      height: 50px;
-    }
-     .navbar-brand {
-       font: normal 30px/1 "berkshire-swash", Helvetica, sans-serif;
-      }
-      .first-nav-bar{
-       margin-top: 0px;
-       top:0px;
-    }    
-    .navbar-toggle{
-      position: absolute;
-      margin-left: 50%;
-      margin-top: 45px;
-      z-index: 2;
-    }
-
-.ul.nav li.dropdown:hover > ul.dropdown-menu {
-    display: block;
-  }
-  .container-with-margin{
-    margin-top: 0px;
-  }
-}
-
-
 @media screen and (max-width: 320px) {
-    .navbar-brand > img {
-      width: 30px;
-      height: 30px;
-           position: absolute;
-    bottom:0; left: 0; right:0; top:10px;
+  .navbar-brand > img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 10px;
     margin: auto;
-    }
-     .navbar-brand {
-       font: normal 28px/1 "berkshire-swash", Helvetica, sans-serif;
-        position: absolute;
-    top:30; bottom:0; left: 0; right:0;
-    margin: auto;
-      }
-
-          .navbar-toggle{
-      position: absolute;
-      margin-top: 13px;
-      margin-left: 55%;
-      z-index: 2;
-    }
-
-      .navbar-fixed-bottom, .navbar-fixed-top {
-        position: relative;
-        min-height: 50px;
-        margin-bottom: 20px;
-        border: 1px solid transparent;
-      }   
- .container-with-margin{
-    margin-top: 0px;
   }
+
+  .navbar-brand {
+    font: normal 28px/1 "berkshire-swash", Helvetica, sans-serif;
+    position: absolute;
+    top: 30;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .navbar-toggle {
+    position: absolute;
+    margin-top: 13px;
+    margin-left: 55%;
+    z-index: 2;
+  }
+
+  .navbar-fixed-bottom,
+  .navbar-fixed-top {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+  }
+
 }
 
 /* Color de los botones: Iniciar sesión y registrarse*/
@@ -173,270 +156,69 @@
 }
 
 header .header-bar {
-	display:block;
-	text-transform:uppercase;
-	position:relative;
+  display: block;
+  text-transform: uppercase;
+  position: relative;
 }
 
 header .header-bar .fa {
-	margin-left:10px;
-}
-header .header-bar .copyright {
-	display:inline-block;
-	padding:20px 0;
+  margin-left: 10px;
 }
 
+header .header-bar .copyright {
+  display: inline-block;
+  padding: 20px 0;
+}
 
 /* Esto sucede cuando detecta que está en un class="social" y dentro de ello tipo "fa fa-" y los eidata*/
 .social [class*="fa fa-"] {
-    background-color: gray;
-    border-radius: 30px;
-    color: #fff;
-    display: inline-block;
-    height: 30px;
-    line-height: 30px;
-    margin: auto 3px;
-    width: 30px;
-    font-size: 15px;
-    text-align: center;
+  background-color: gray;
+  border-radius: 30px;
+  color: #fff;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  margin: auto 3px;
+  width: 30px;
+  font-size: 15px;
+  text-align: center;
 }
 /* Acá lo que hace es cuando se hace un hover cambia de color dependiendo del 'fa' */
 .fa-facebook:hover {
-    background-color:  #0074D9;
+  background-color: #0074D9;
 }
 
 .fa-twitter:hover {
-    background-color: #46c0fb;
+  background-color: #46c0fb;
 }
+
 .fa-youtube:hover {
-    background-color: red;
+  background-color: red;
 }
+
 .fa-google-plus:hover {
-    background-color: firebrick;
+  background-color: firebrick;
 }
+
 .fa-whatsapp:hover {
-    background-color: forestgreen;
+  background-color: forestgreen;
 }
+
 .fa-skype:hover {
-    background-color: #0074D9;
+  background-color: #0074D9;
 }
 
-
+/* Esto es para cuando se pasa el mouse por encima se baje el menú, hay que adaptarlo para que no pase en movil*/
 ul.nav li.dropdown:hover > ul.dropdown-menu {
-    display: block;    
+  display: block;
 }
 
-
-.modal-footer{
-    text-align: left;    
+.image_responsive img {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
-.form-inline .form-group {
-    margin-bottom: 11px;
-}
-
-.form-inline .control-label {
-    width: 110px;
-    text-align:right;
-    margin-right: 10px;
-}
-.image_responsive img{
-height: 100%;
-width: 100%;
-margin-bottom: 30px;
-}
-
-.body{
-
-  padding-top: 0px !important;
-}
-
-
-/* Contact forms*/
-
-.footer-distributed{
-	width: 100%;
-	font: bold 16px sans-serif;
-	text-align: left;
-
-	padding: 60px 40px 20px;
-	overflow: hidden;
-}
-
-/* Esto es las características que tiene el form que se encuentra en el footer*/
-
-.footer-distributed form{
-	display: inline-block;
-}
-
-.footer-distributed form input,
-.footer-distributed form textarea{
-	display: block;
-	border-radius: 3px;
-	box-sizing: border-box;
-	background-color:  #1f2022;
-	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
-	border: none;
-	resize: none;
-
-	font: inherit;
-	font-size: 14px;
-	font-weight: normal;
-	color:  #d1d2d2;
-
-	width: 300px;
-	padding: 18px;
-}
-
-.footer-distributed ::-webkit-input-placeholder {
-	color:  #5c666b;
-}
-
-.footer-distributed ::-moz-placeholder {
-	color:  #5c666b;
-	opacity: 1;
-}
-
-.footer-distributed :-ms-input-placeholder{
-	color:  #5c666b;
-}
-.footer-distributed form button{
-		padding: 10px 80px;
-	}
-
-
-.footer-distributed form input{
-	height: 30px;
-	margin-bottom: 15px;
-}
-
-.footer-distributed form textarea{
-	height: 60px;
-	margin-bottom: 20px;
-}
-
-.footer-distributed form button{
-	border-radius: 3px;
-	background-color:  #33383b;
-	color: #ffffff;
-	border: 0;
-
-	font-weight: bold;
-	float: right;
-}
-
-/* Acá le doy forma al form dependiendo de unas máximas en screen */
-
-@media (max-width: 1000px) {
-
-	.footer-distributed {
-		font: bold 14px sans-serif;
-	}
-
-	.footer-distributed .footer-company-name{
-		font-size: 12px;
-	}
-
-	.footer-distributed form input,
-	.footer-distributed form textarea{
-		width: 250px;
-	}
-
-	.footer-distributed form button{
-		padding: 10px 80px;
-	}
-
-}
-
-@media (max-width: 800px) {
-
-	.footer-distributed{
-		padding: 30px;
-	}
-
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-right{
-		float: none;
-		max-width: 300px;
-		margin: 0 auto;
-	}
-
-	.footer-distributed .footer-left{
-		margin-bottom: 40px;
-	}
-
-	.footer-distributed form{
-		margin-top: 30px;
-			
-	}
-
-	.footer-distributed form{
-		display: block;
-	}
-
-	.footer-distributed form button{
-		float: none;
-	}
-}
-
-/* Acá doy color y diseño al footer usando esto como id*/
-
-#myFooter {
-    background-color: #182c39;
-    color: white;
-    padding-top: 20px;
-}
-
-#map-container {
-    height: 240px;
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-
-#myFooter .row {
-    margin: 0 85px;
-}
-
-#myFooter .footer-copyright {
-    background-color: #10222e;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    text-align: center;
-}
-
-#myFooter .footer-copyright p {
-    margin: 10px;
-    color: #ccc;
-}
-
-#myFooter .container {
-    width: auto;
-}
-
-
-#myFooter .fa {
-    font-size: 30px;
-    margin-right: 15px;
-    margin-left: 20px;
-    background-color: white;
-    color: #182c39;
-    border-radius: 51%;
-    padding: 10px;
-    height: 50px;
-    width: 50px;
-    text-align: center;
-    line-height: 31px;
-    text-decoration: none;
-    transition: color 0.2s;
-}
-
-
-@media screen and (max-width: 767px) {
-    #myFooter {
-        text-align: center;
-    }
-    #myFooter .row {
-        margin: 0;
-    }
+.body {
+  padding-top: 0 !important;
 }

@@ -82,7 +82,7 @@
             </div>
 
             <button type="button" class="btn btn-primary" onclick="IniciarSesion();" data-dismiss="modal">Iniciar</button>
-            <input type="checkbox" value="remember" id="rememberme">Recuerdame<br/><br/>
+            <input type="checkbox" value="remember" id="recuerdame">Recuerdame<br/><br/>
 
             <a href="#">¿Olvidó su contraseña?</a>
 
@@ -107,6 +107,7 @@
           </div>
         </div>
         <div class="pull-right" id="lado_derecho">
+          <a class="social" href="/proyecto/Views/Products/Checkout.html"><i class="fa fa-shopping-cart hidden-lg hidden-md hidden-sm"></i></a>
           <button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#becomeamember">
          <i class="fa fa-users"></i>
          <span class="hidden-sm hidden-xs">Registrarse</span>
@@ -127,14 +128,14 @@
         <span class="glyphicon glyphicon-chevron-down"></span>	</button>
         <!-- <span class="glyphicon glyphicon-chevron-down"></span><!-- Responsive button icon -->
 
-        <a class="navbar-brand" href="/proyecto/Views/Home/"><img src="./../../Content/images/logo.png" class="logo-css" alt="Dispute Bills" /> </a>
-        <a rel="nofollow" rel="noreferrer" class="navbar-brand navbar-style" href="/proyecto/Views/Home">Extintores Universales</a>
+        <a class="navbar-brand" href="/proyecto/Views/Home/Index.html"><img src="./../../Content/images/logo.png" class="logo-css" alt="Dispute Bills" /> </a>
+        <a rel="nofollow" rel="noreferrer" class="navbar-brand navbar-style" href="/proyecto/Views/Home/Index.html">Extintores Universales</a>
       </div>
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li><a href="/proyecto/Views/Home/">Inicio <span class="sr-only">(current)</span></a></li>
-          <li><a href="/proyecto/Views/Home/About.html">¿Quienes somos? <span class="sr-only">(current)</span></a></li>
+          <li><a href="/proyecto/Views/Home/Index.html">Inicio <span class="sr-only">(current)</span></a></li>
+          <li><a href="/proyecto/Views/Home/About.html">¿Quienes somos?</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rutas<b class="caret"></b></a>
             <ul class="dropdown-menu">
@@ -169,7 +170,7 @@
             </ul>
           </li>
         </ul>
-        <ul class="nav navbar-nav navbar-right social">
+        <ul class="nav navbar-nav navbar-left social">
           <li><a href="/proyecto/Views/Products/Checkout.html"><i class="fa fa-shopping-cart"></i></a></li>
         </ul>
       </div>
@@ -181,11 +182,10 @@
   $(function () {
     window.onload = VerificarSesion();
   })
-
 </script>
 
 <div class="pull-right" id="reemplazo" style="display: none">
-  <label for="" style="color:blanchedalmond" id="name"></label>
+  <label for="" style="color:blanchedalmond" class="hidden-xs" id="name"></label>
   <button type="button" class="btn btn-primary navbar-btn" onclick="Panel();">
     <i class="fa fa-list-alt"></i>
     <span class="hidden-sm hidden-xs">Panel</span>
