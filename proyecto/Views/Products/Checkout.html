@@ -2,6 +2,7 @@
 <html>
 
 <head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="./../../Content/images/extintoresIcon.ico">
@@ -20,98 +21,67 @@
 	</header>
 
 	<div class="container container-with-margin">
-
 		<ol class="breadcrumb">
-			<li><a href="/proyecto/Views/Home">Inicio</a></li>
-			<li class="active">Información de pago</li>
+			<li><a href="../Home/Index.html">Inicio</a></li>
+			<li class="active">Productos agregados</li>
 		</ol>
 		<div class="container">
-			<div class="row">
-				<div class="main col-sm-12">
-					<h1>Pago de productos</h1><br/>
-					<table class="table table-bordered" id="tabla_art">
-						<thead>
-							<tr>
-								<th>Producto </th>
-								<th>Precio </th>
-								<th>Cantidad</th>
-								<th>Total </th>
-							</tr>
-						</thead>
-						<tbody>
-						</tbody>
-					</table>
-					<fieldset>
-						<legend>Información de pago</legend>
-						<form role="form" class="form-horizontal" id="billing-information">
-							<div class="row">
-								<div class="col-sm-12">
-									<div class="form-group">
-										<label for="billingFirstName" class="col-md-2 control-label">Nombre</label>
-										<div class="col-md-10">
-											<input type="text" class="form-control" id="billingFirstName" value="Ingrese Nombre">
-										</div>
-									</div>
-									<div class="form-group">
-										<label for="billingLastName" class="col-md-2 control-label">Apellidos</label>
-										<div class="col-md-10">
-											<input type="text" class="form-control" id="billingLastName" value="Ingrese Apellidos">
-										</div>
-									</div>
-									<div class="form-group">
-										<label for="billingTel" class="col-md-2 control-label">Teléfono</label>
-										<div class="col-md-10">
-											<input type="text" class="form-control" id="billingTel" value="Ingrese Teléfono">
-										</div>
-									</div>
-									<div class="form-group">
-										<label for="billingemail" class="col-md-2 control-label">Correo electrónico</label>
-										<div class="col-md-10">
-											<input type="email" class="form-control" id="billingemail" value="Ingrese correo electrónico">
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-12">
-									<div class="form-group">
-										<label for="billingAddress1" class="col-md-2 control-label">Dirección 1</label>
-										<div class="col-md-10">
-											<input type="text" class="form-control" id="billingAddress1" value="Ingrese Dirección">
-										</div>
-									</div>
-									<div class="form-group">
-										<label for="billingAddress2" class="col-md-2 control-label">Dirección 2</label>
-										<div class="col-md-10">
-											<input type="text" class="form-control" id="billingAddress2" value="Ingrese Dirección">
-										</div>
-									</div>
-									<div class="form-group">
-										<label for="billingCity" class="col-md-2 control-label">Ciudad/Pueblo</label>
-										<div class="col-md-10">
-											<input type="text" class="form-control" id="billingCity" value="Ingrese ciudad/pueblo">
-										</div>
-									</div>
-									<div class="form-group">
-										<label for="billingPostalCode" class="col-md-2 control-label">Detalles de calle/casa/...</label>
-										<div class="col-md-10">
-											<input type="text" class="form-control" id="billingPostalCode" value="Ingrese los detalles que crea necesario para llegar al lugar">
-										</div>
-									</div>
-								</div>
-							</div>
-						</form>
-					</fieldset>
-					<div class="text-right">
-						<a onclick="FinalizarCompra();" class="btn btn-group btn-default">Ir a Finalizar compra<i class="icon-right-open-big"></i></a>
-					</div>
-					<br />
-
-				</div>
+			<h2>Carrito de compras</h2>
+			<hr/>
+			<div class="table-responsive">
+				<table class="table table-bordered table-responsive" id="tabla_art">
+					<thead>
+						<tr>
+							<th>Producto </th>
+							<th>Precio </th>
+							<th>Cantidad</th>
+							<th>Total </th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
 			</div>
-		</div>
-		</section>
+			<legend>Información de pago</legend>
+			<form role="form" class="form-horizontal" id="billing-information">
+				<div class="container row">
+					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+						<div class="form-group">
+							<label for="infoNombre">Nombre</label>
+							<input type="text " class="form-control " id="infoNombre" value="Ingrese Nombre ">
+						</div>
+						<div class="form-group">
+							<label for="infoApellidos">Apellidos</label>
+							<input type="text" class="form-control" id="infoApellidos" value="Ingrese Apellidos">
+						</div>
+						<div class="form-group">
+							<label for="infoTelefono">Teléfono</label>
+							<input type="text " class="form-control " id="infoTelefono " value="Ingrese Teléfono ">
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-7 col-md-offset-1 col-lg-7 col-lg-offset-1">
+						<div class="form-group">
+							<label for="infoDireccion ">Dirección</label>
+							<input type="text" class="form-control" id="infoDireccion" value="Ingrese Dirección">
+						</div>
+						<div class="form-group">
+							<label for="infoCiudad">Ciudad/Pueblo</label>
+							<input type="text" class="form-control " id="infoCiudad " value="Ingrese ciudad/pueblo ">
+						</div>
+						<div class="form-group">
+							<label for="infoCasa">Detalles de calle/casa/...</label>
+							<input type="text" class="form-control" id="infoCasa" value="Ingrese los detalles que crea necesario para llegar al lugar">
+						</div>
+					</div>
+				</div>
+			</form>
 
+			<div class="text-right">
+				<a onclick="FinalizarCompra();" class="btn btn-group btn-default">Ir a Finalizar compra<i class="icon-right-open-big"></i></a>
+			</div>
+			<br />
+		</div>
 	</div>
 
 

@@ -58,15 +58,32 @@ function CargarArticulos() {
             '<td>' + value.precio + '</td>' +
             '<td><input type="text" class="form-control" value="' + value.cantidad + '" disabled></td>' +
             '<td>' + precio + '</td>' +
+            '<td> <a onclick="EliminarArticulo(this);" class="btn btn-group btn-default center-block"><i class="icon-left-open-big"></i>Borrar</a> </td>' +
             '</tr>');
     });
-    $('#tabla_art > tbody:last-child').append(
-        '<tr>' +
-        '<td></td>' +
-        '<td></td>' +
-        '<td class="text-center" style="font-size:20px;">Total</td>' +
-        '<td>' + precioTotal + '</td>' +
-        '</tr>');
+
+    if (precioTotal != 0) {
+        $('#tabla_art > tbody:last-child').append(
+            '<tr>' +
+            '<td></td>' +
+            '<td></td>' +
+            '<td class="text-center" style="font-size:20px;">Total</td>' +
+            '<td>' + precioTotal + '</td>' +
+            '</tr>');
+
+    }
+}
+
+function EliminarArticulo(element) {
+
+    var filas = jQuery(element).closest('tr');
+    var titulo = filas.find('td')[0];
+
+    var guardado = JSON.parse(localStorage.getItem(articulos_item));
+    guardado.splice(guardado.indexOf(titulo), 1);
+
+    localStorage.setItem(articulos_item, JSON.stringify(guardado));
+    location.reload(true);
 
 }
 
@@ -78,5 +95,8 @@ function FinalizarCompra() {
         window.location.href = "http://localhost/proyecto/Views/Products/Checkout.html";
         return;
     }
-    window.location.href = "http://localhost/proyecto/Views/Products/Checkout_Payment.html";
+    var url = "http://localhost/proyecto/Views/Products/Checkout_Payment.html";
+    if (url != window.location.href) {
+        window.location.href = "http://localhost/proyecto/Views/Products/Checkout_Payment.html";
+    }
 }

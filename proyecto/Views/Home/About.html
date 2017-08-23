@@ -2,14 +2,15 @@
 <html>
 
 <head>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="./../../Content/images/extintoresIcon.ico">
 
-	<link rel="stylesheet" href="./../../Content/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="./../../Content/style.css">
+  <link rel="stylesheet" href="./../../Content/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./../../Content/style.css">
   <link rel="stylesheet" href="./../../Content/style_footer.css">
-	<link rel="stylesheet" href="./../../Content/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./../../Content/font-awesome-4.7.0/css/font-awesome.min.css">
 
   <title>Extintores Universales - A cerca </title>
 </head>
@@ -19,32 +20,40 @@
   <header data-load="./../Shared/header.html">
   </header>
 
-  <div class="container container-with-margin">
+  <div class="container container-with-margin"><br/>
 
     <ol class="breadcrumb">
-      <li><a href="/proyecto/Views/Home/">Inicio</a></li>
+      <li><a href="./Index.html">Inicio</a></li>
       <li class="active">¿Quienes somos?</li>
     </ol>
 
-    <h4><strong>A cerca de nosotros</strong></h3>
-      <div class="row">
-
-        <div class="col-sm-6">
-          <p>Extintores Universales se califica por brindar el mejor servicio para todos nuestros clientes.</p>
-          <p>Extintores Universales se califica por brindar el mejor servicio para todos nuestros clientes.</p>
-          <p>Extintores Universales se califica por brindar el mejor servicio para todos nuestros clientes.</p>
-          <p>Extintores Universales se califica por brindar el mejor servicio para todos nuestros clientes.</p>
-          <p>Extintores Universales se califica por brindar el mejor servicio para todos nuestros clientes.</p>
-
-        </div>
-
-        <div class="col-sm-6 image_responsive">
-          <img src="./../../Content/images/portfolio-1.jpg"  alt="nosotros">
-        </div>
-
+    <h3><strong>A cerca de nosotros</strong></h3>
+    <div class="row" >
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <br/>
+        <p>
+          Extintores Universales, una empresa que brinda diferentes servicios en lo que se refiere a asesoría, venta, recarga y mantenimiento
+          de sus extintores.</p>
+        <p>Nuestros asesores le brindan la más completa información en cada uno de los diferentes productos que ofrecemos para
+          su mayor bienestar, permitiendo un entendimiento de cómo utilizar los diferentes extintores creados para cada necesidad.</p>
+        <p class="hidden-xs">Contamos con diferentes normas para realizar nuestra labor en armonía con el medio ambiente, para poder brindar seguridad,
+          calidad y transparencia a cada uno de nuestros clientes.</p><hr/>
+        <h4 class="text-center"><strong>Misión</strong></h4>
+        <p>Ofrecer productos y servicios relacionados con el área de la seguridad, salvaguardar la salud, vida y patrimonio
+          de las personas e instituciones al ofrecer el mejor servicio en la venta y mantenimiento de los diferentes extintores.
+        </p>
+        <h4 class="text-center"><strong>Visión</strong></h4>
+        <p>Ser líderes en la rama de la seguridad y especialistas en seguridad contra incendios en Costa Rica, ser reconocidos
+          entre los clientes por la calidad de nuestros servicios y productos. </p>
       </div>
 
-      <hr />
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 image_responsive">
+        <img src="./../../Content/images/portfolio-1.jpg" class="center-block" alt="nosotros">
+      </div>
+
+    </div>
+
+    <hr />
 
   </div>
 
@@ -52,7 +61,7 @@
   <footer data-load="./../Shared/footer.html">
   </footer>
 
-  <script type="text/javascript" src="./../../Content/js/libs/jquery-3.2.1.min.js"></script> 
+  <script type="text/javascript" src="./../../Content/js/libs/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="./../../Content/bootstrap/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="./../../Content/js/libs/modernizr-2.5.3.min.js"></script>
   <script type="text/javascript" script-name="berkshire-swash" src="http://use.edgefonts.net/berkshire-swash.js"></script>
@@ -62,8 +71,7 @@
   <script>
     $(function () {
       $("[data-load]").each(function () {
-        $(this).load($(this).data("load"), function () {
-        });
+        $(this).load($(this).data("load"), function () {});
       });
     })
   </script>
@@ -78,8 +86,7 @@
         if (!open) {
           this.classList.add('close');
           open = true;
-        }
-        else {
+        } else {
           this.classList.remove('close');
           open = false;
         }

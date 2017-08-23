@@ -1,5 +1,14 @@
-/*Revisar*/
 .navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.navbar-default .navbar-toggle:hover::after {
+  background-color: transparent;
   border-color: transparent;
 }
 
@@ -7,6 +16,7 @@
 .navbar-style {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
+  -o-box-sizing: content-box;
   box-sizing: content-box;
   border: none;
   font: normal 2.3em "berkshire-swash", Helvetica, sans-serif;
@@ -15,25 +25,34 @@
   text-overflow: ellipsis;
   text-shadow: 0 1px 2px rgba(0,0,0,1) !important;
 }
+
 .image_responsive img {
   height: 100%;
   width: 100%;
   margin-top: 20px;
 }
+.image_carrousel img {
+  height: 100%;
+  width: 100%;
+}
 
-.full{
+.full {
   margin: 0 auto;
   width: 100%;
 }
 
-.article{
+.article {
   border-style: none;
 }
 
-.add{
-  margin-top:18px;
+.method {
+  border-style: ridge;
+  margin-bottom: 10px;
 }
 
+.add {
+  margin-top: 18px;
+}
 @media screen and (max-width: 2000px) {
   .navbar-brand > img {
     width: 60px;
@@ -89,6 +108,7 @@
   .container-with-margin {
     margin-top: 195px;
   }
+
   .image_responsive img {
     height: 300px;
     width: 100%;
@@ -97,10 +117,6 @@
 
 }
 @media screen and (max-width: 480px) {
-  .navbar-style {
-    font: normal 1.8em "berkshire-swash", Helvetica, sans-serif;
-  }
-
   .navbar-brand > img {
     width: 50px;
     height: 50px;
@@ -117,7 +133,7 @@
   .navbar-fixed-top {
     position: relative;
     min-height: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     border: 1px solid transparent;
   }
 
@@ -136,10 +152,10 @@
   .container-with-margin {
     margin-top: 0;
   }
-  .article{
+
+  .article {
     border-style: ridge;
-    margin-top: 5px;
-    margin: 4px 4px 4px 4px;
+    margin: 4px;
     border-radius: 10px;
   }
 
@@ -152,44 +168,44 @@
 }
 @media screen and (max-width: 320px) {
   .navbar-brand > img {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 10px;
-    margin: auto;
+    width: 40px;
+    height: 40px;
   }
 
-  .navbar-brand {
-    font: normal 28px/1 "berkshire-swash", Helvetica, sans-serif;
-    position: absolute;
-    top: 30;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+  .navbar-toggle > span {
+    padding-top: 0;
+    position: static;
+    padding-left: 10px;
+
   }
 
-  .navbar-toggle {
-    position: absolute;
-    margin-top: 13px;
-    margin-left: 55%;
-    z-index: 2;
+  .navbar-style {
+    font: normal 1.5em "berkshire-swash", Helvetica, sans-serif;
   }
 
   .navbar-fixed-bottom,
   .navbar-fixed-top {
     position: relative;
     min-height: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     border: 1px solid transparent;
   }
-  .article{
+
+  .first-nav-bar {
+    margin-top: 0;
+    top: 0;
+  }
+
+  .navbar-toggle {
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 50px;
+    z-index: 2;
+  }
+
+  .article {
     border-style: ridge;
-    margin-top: 5px;
-    margin: 1px 1px 1px 1px;
+    margin: 4px;
     border-radius: 10px;
   }
 
@@ -198,7 +214,7 @@
     width: 75%;
     margin-top: 20px;
   }
-  
+
 }
 
 /* Color de los botones: Iniciar sesión y registrarse*/
