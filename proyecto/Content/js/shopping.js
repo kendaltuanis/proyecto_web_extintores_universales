@@ -36,9 +36,9 @@ function AgregarArticulo(element, cantidad = 1, precio = 0) {
 function DetalleArticulo(element) {
 
     var cantidad = 1;
-    var titulo = $(element).closest(".body").find("h3").text();
+    var titulo = $(element).closest(".body").find("h4").text();
     var precio = $(element).closest(".body").find("label").text().split(" ")[1];
-    var tamano = $(element).closest(".body").find("h3").text().split(" ")[2];
+    var tamano = $(element).closest(".body").find("h4").text().split(" ")[2];
 
     window.location.href = "http://localhost/proyecto/Views/Products/Shop-Product.html?titulo=" + titulo + "&precio=" + precio + "&tamano=" + tamano;
 
