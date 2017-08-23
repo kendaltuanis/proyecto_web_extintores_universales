@@ -15,82 +15,78 @@
 	<title>Extintores Universales - Descripción Producto</title>
 </head>
 
-<body>
+<body class="body">
 	<!--Acá se carga el header-->
 	<header data-load="./../Shared/header.html">
 	</header>
 
+	<!-- Container-with-margin es para lo del margen despues del navbar-->
 	<div class="container container-with-margin">
-
 		<ol class="breadcrumb">
-			<li><a href="/proyecto/Views/Home">Inicio</a></li>
+			<li><a href="/proyecto/Views/Home/Index.html">Inicio</a></li>
 			<li class="active">Descripción Producto</li>
 		</ol>
-		<div class="container">
-			<div class="row">
-				<div class="main col-sm-12">
-					<h1>Producto de compra</h1>
-					<div class="row">
-						<div class="col-sm-4">
-							<div class="image_responsive">
-								<img src="./../../Content/images/product-1.jpg" alt="">
-							</div>
-						</div>
-						<div class="col-sm-8">
-							<h2>Descripción</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem debitis enim facilis porro quia in voluptates praesentium,
-								cupiditate, dolorum. Facilis minus, quidem! Id perspiciatis labore praesentium voluptatibus assumenda odio, magni.</p>
-							<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non sint beatae delectus obcaecati eveniet nulla voluptate
-								odio est laborum veniam? Natus nemo provident, voluptate molestias sint, nam dolor blanditiis minus!</p>
-							<hr>
-							<div class="row">
-								<form role="form" class="clearfix">
-									<div class="col-sm-8">
-										<div class="form-group">
-											<label>Cantidad</label>
-											<input type="number" class="form-control" value="1">
-										</div>
-									</div>
-									<div class="col-sm-8">
-										<div class="form-group">
-											<label>Tamaño</label>
-											<select class="form-control">
-														<option>10lbs</option>
-														<option>20lbs</option>
-													</select>
-										</div>
-									</div>
-									<div class="col-sm-12 text-right">
-									</div>
-								</form>
-							</div>
-							<div class="clearfix">
-								<span><i></i>₡35.000,00</span>
-								<a href="#" class="btn btn-sm btn-default-transparent">Agregar<i class="fa fa-shopping-cart"></i></a>
-							</div>
-						</div>
-					</div>
+
+		<h3 id="producto_compra">Producto de compra</h3>
+		<div class="row">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+				<div class="image_responsive">
+					<img src="./../../Content/images/product-1.jpg" alt="" class="center-block">
 				</div>
 			</div>
+			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+				<div class="row">
+					<hr class="visible-xs">
+					<form role="form" class="clearfix">
+						<div class="col-xs-6 col-sm-12 col-md-6">
+							<div class="form-group">
+								<label>Cantidad</label>
+								<input id="cantidad" type="number" class="form-control" value="1">
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-12 col-md-6">
+							<div class="form-group">
+								<label>Tamaño</label>
+								<select class="form-control" id="peso_extintor">
+								</select>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						<label id="precio_compra" class="label label-default center-block" style="font-size: 16px;"></label>
+					</div>
+					<hr />
+					<div class="col-xs-12 col-sm-12 col-md-2">
+						<a onclick="AgregarArticulo(this,parseInt($('#cantidad').val()),$('#precio_compra').text());" class="btn btn-default">Agregar<i class="fa fa-shopping-cart"></i></a>
+					</div>
+				</div>
+				<h2>Descripción</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem debitis enim facilis porro quia in voluptates praesentium,
+					cupiditate, dolorum. Facilis minus, quidem! Id perspiciatis labore praesentium voluptatibus assumenda odio, magni.</p>
+			</div>
 		</div>
+
+	</div>
+	<br/>
 	</div>
 
 	<!--Acá se carga el footer-->
 	<footer data-load="./../Shared/footer.html">
 	</footer>
 
-	<script type="text/javascript" src="./../../Content/js/libs/jquery-3.2.1.min.js"></script> 
+	<script type="text/javascript" src="./../../Content/js/libs/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="./../../Content/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="./../../Content/js/libs/modernizr-2.5.3.min.js"></script>
 	<script type="text/javascript" script-name="berkshire-swash" src="http://use.edgefonts.net/berkshire-swash.js"></script>
-	<script type="text/javascript" src="../../Content/js/script.js"></script>
+	<script type="text/javascript" src="../../Content/js/session.js"></script>
+	<script type="text/javascript" src="../../Content/js/shopping.js"></script>
 
 	<script>
 		$(function () {
 			$("[data-load]").each(function () {
-				$(this).load($(this).data("load"), function () {
-				});
+				$(this).load($(this).data("load"), function () {});
 			});
 		})
 	</script>
@@ -105,13 +101,17 @@
 				if (!open) {
 					this.classList.add('close');
 					open = true;
-				}
-				else {
+				} else {
 					this.classList.remove('close');
 					open = false;
 				}
 			}
 		});
+	</script>
+	<script>
+		$(function () {
+			window.onload = CargarArticuloDescripcion();
+		})
 	</script>
 
 </body>
