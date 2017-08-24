@@ -29,7 +29,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-sm-3 col-md-3">
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
           <a href="mail-compose.html" class="btn btn-danger btn-block btn-compose-email">Enviar correo</a>
           <ul class="nav nav-pills nav-stacked nav-email shadow mb-20">
             <li>
@@ -45,8 +45,8 @@
           </ul>
           <!-- /.nav -->
 
-          <h5 class="nav-email-subtitle">Más</h5>
-          <ul class="nav nav-pills nav-stacked nav-email mb-20 rounded shadow">
+          <h5 class="nav-email-subtitle hidden-xs">Más</h5>
+          <ul class="nav nav-pills nav-stacked nav-email mb-20 rounded shadow hidden-xs">
             <li>
               <a >
                     <i class="fa fa-inbox"></i> Mensajes 
@@ -55,11 +55,11 @@
           </ul><br/>
           <!-- /.nav -->
         </div>
-        <div class="col-sm-9 col-md-9">
+        <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
           <div class="panel rounded shadow panel-teal">
             <div class="panel-heading">
               <div class="pull-left">
-                <h3 class="panel-title" id="panel_titulo">Compras</h3>
+                <h3 class="panel-title" id="panel_titulo"></h3>
               </div>
               <div class="clearfix"></div>
             </div>
@@ -93,24 +93,6 @@
         $(this).load($(this).data("load"), function () {});
       });
     })
-  </script>
-
-  <script>
-    var anchor = document.querySelectorAll('button');
-
-    [].forEach.call(anchor, function (anchor) {
-      var open = false;
-      anchor.onclick = function (event) {
-        event.preventDefault();
-        if (!open) {
-          this.classList.add('close');
-          open = true;
-        } else {
-          this.classList.remove('close');
-          open = false;
-        }
-      }
-    });
   </script>
 
 </body>
