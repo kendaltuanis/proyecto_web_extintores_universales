@@ -148,8 +148,8 @@
 				<br />
 			</div>
 			<div class="container text-right"><br/>
-				<a href="/proyecto/Views/Products/Checkout.html" class="btn btn-group btn-default"><i class="icon-left-open-big"></i> Ir atrás</a>
-				<a href="#" class="btn btn-group btn-default">Finalizar compra<i class="icon-right-open-big"></i></a>
+				<a href="./Checkout.html" class="btn btn-group btn-default"><i class="icon-left-open-big"></i> Ir atrás</a>
+				<a onclick="FinalizarCompra();" class="btn btn-group btn-default">Finalizar compra<i class="icon-right-open-big"></i></a>
 			</div><br />
 		</div>
 
@@ -194,7 +194,7 @@
 	</script>
 	<script>
 		$(function () {
-			window.onload = FinalizarCompra();
+			window.onload = IrMetodoPago();
 		})
 	</script>
 

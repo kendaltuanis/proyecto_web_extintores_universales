@@ -44,41 +44,41 @@
 				</table>
 			</div>
 			<legend>Información de pago</legend>
-			<form role="form" class="form-horizontal" id="billing-information">
-				<div class="container row">
-					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-						<div class="form-group">
-							<label for="infoNombre">Nombre</label>
-							<input type="text " class="form-control " id="infoNombre" value="Ingrese Nombre ">
-						</div>
-						<div class="form-group">
-							<label for="infoApellidos">Apellidos</label>
-							<input type="text" class="form-control" id="infoApellidos" value="Ingrese Apellidos">
-						</div>
-						<div class="form-group">
-							<label for="infoTelefono">Teléfono</label>
-							<input type="text " class="form-control " id="infoTelefono " value="Ingrese Teléfono ">
-						</div>
+
+			<div class="container row">
+				<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+					<div class="form-group">
+						<label for="infoNombre">Nombre</label>
+						<input type="text " class="form-control " id="infoNombre" value="Ingrese Nombre ">
 					</div>
-					<div class="col-xs-12 col-sm-12 col-md-7 col-md-offset-1 col-lg-7 col-lg-offset-1">
-						<div class="form-group">
-							<label for="infoDireccion ">Dirección</label>
-							<input type="text" class="form-control" id="infoDireccion" value="Ingrese Dirección">
-						</div>
-						<div class="form-group">
-							<label for="infoCiudad">Ciudad/Pueblo</label>
-							<input type="text" class="form-control " id="infoCiudad " value="Ingrese ciudad/pueblo ">
-						</div>
-						<div class="form-group">
-							<label for="infoCasa">Detalles de calle/casa/...</label>
-							<input type="text" class="form-control" id="infoCasa" value="Ingrese los detalles que crea necesario para llegar al lugar">
-						</div>
+					<div class="form-group">
+						<label for="infoApellidos">Apellidos</label>
+						<input type="text" class="form-control" id="infoApellidos" value="Ingrese Apellidos">
+					</div>
+					<div class="form-group">
+						<label for="infoTelefono">Teléfono</label>
+						<input type="text " class="form-control " id="infoTelefono " value="Ingrese Teléfono ">
 					</div>
 				</div>
-			</form>
+				<div class="col-xs-12 col-sm-12 col-md-7 col-md-offset-1 col-lg-7 col-lg-offset-1">
+					<div class="form-group">
+						<label for="infoDireccion ">Dirección</label>
+						<input type="text" class="form-control" id="infoDireccion" value="Ingrese Dirección">
+					</div>
+					<div class="form-group">
+						<label for="infoCiudad">Ciudad/Pueblo</label>
+						<input type="text" class="form-control " id="infoCiudad " value="Ingrese ciudad/pueblo ">
+					</div>
+					<div class="form-group">
+						<label for="infoCasa">Detalles de calle/casa/...</label>
+						<input type="text" class="form-control" id="infoCasa" value="Ingrese los detalles que crea necesario para llegar al lugar">
+					</div>
+				</div>
+			</div>
+
 
 			<div class="text-right">
-				<a onclick="FinalizarCompra();" class="btn btn-group btn-default">Ir a Finalizar compra<i class="icon-right-open-big"></i></a>
+				<a onclick="IrMetodoPago();" class="btn btn-group btn-default">Ir a Finalizar compra<i class="icon-right-open-big"></i></a>
 			</div>
 			<br />
 		</div>
@@ -95,6 +95,7 @@
 	<script type="text/javascript" script-name="berkshire-swash" src="http://use.edgefonts.net/berkshire-swash.js"></script>
 	<script type="text/javascript" src="../../Content/js/session.js"></script>
 	<script type="text/javascript" src="../../Content/js/shopping.js"></script>
+	<script type="text/javascript" src="../../Content/js/dashboard.js"></script>
 
 	<!--Esto funciona para cargar el header y/o footer-->
 	<script>
@@ -125,6 +126,7 @@
 	<script>
 		$(function () {
 			window.onload = CargarArticulos();
+			window.onload = CargarDireccionCheckout();
 		})
 	</script>
 

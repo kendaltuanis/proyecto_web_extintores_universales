@@ -7,6 +7,9 @@ const error_compra = 'Primero debe de iniciar sesión antes de finalizar la comp
 const nombre_item = 'nombre';
 const persona_online_item = 'persona_online';
 const articulos_item = 'articulos';
+const facturacion_item = 'facturacion';
+const direccion_item = 'direccion';
+const compra_item = 'compra';
 
 function VerificarEntradas() {
 

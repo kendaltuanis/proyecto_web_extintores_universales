@@ -12,61 +12,79 @@
   <link rel="stylesheet" href="./../../Content/style_footer.css">
   <link rel="stylesheet" href="./../../Content/font-awesome-4.7.0/css/font-awesome.min.css">
 
-
-  <title>Extintores Universales</title>
+  <title>Extintores Universales - Panel </title>
 </head>
 
 <body>
-
   <!--Acá se carga el header-->
   <header data-load="./../Shared/header.html">
   </header>
 
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
+  <div class="container container-with-margin"><br class="visible-xs" />
+
+    <ol class="breadcrumb">
+      <li><a href="../Home/Index.html">Inicio</a></li>
+      <li class="active">Panel</li>
     </ol>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <img src="../../Content/images/image-3-index.jpg">
-      </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-md-3">
+          <a href="mail-compose.html" class="btn btn-danger btn-block btn-compose-email">Enviar correo</a>
+          <ul class="nav nav-pills nav-stacked nav-email shadow mb-20">
+            <li>
+              <a onclick="CargarCompra();">
+                    <i class="fa fa-cart-plus"></i> Compras</a>
+              </li>
+            <li>
+              <a onclick="CargarFacturacion();"><i class="fa fa-file-text-o"></i> Facturación</a>
+            </li>
+            <li>
+              <a onclick="CargarDireccion();"><i class="fa fa-mail-forward"></i> Dirección-envios</a>
+            </li>
+          </ul>
+          <!-- /.nav -->
 
-      <div class="item">
-        <img src="../../Content/images/image-2-index.jpg" class="img-responsive" alt="Chicago">
-      </div>
+          <h5 class="nav-email-subtitle">Más</h5>
+          <ul class="nav nav-pills nav-stacked nav-email mb-20 rounded shadow">
+            <li>
+              <a >
+                    <i class="fa fa-inbox"></i> Mensajes 
+                </a>
+            </li>
+          </ul><br/>
+          <!-- /.nav -->
+        </div>
+        <div class="col-sm-9 col-md-9">
+          <div class="panel rounded shadow panel-teal">
+            <div class="panel-heading">
+              <div class="pull-left">
+                <h3 class="panel-title" id="panel_titulo">Compras</h3>
+              </div>
+              <div class="clearfix"></div>
+            </div>
 
-      <div class="item">
-        <img src="../../Content/images/image-4-index.jpg" class="img-responsive" alt="New York">
+            <div id="panel" >
+
+
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-        <span class="sr-only">Anterior</span>
-      </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Siguiente</span>
-      </a>
+
   </div>
-
-
-
   <!--Acá se carga el footer-->
   <footer data-load="./../Shared/footer.html">
   </footer>
 
-  <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
   <script type="text/javascript" src="./../../Content/js/libs/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="./../../Content/bootstrap/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="./../../Content/js/libs/modernizr-2.5.3.min.js"></script>
   <script type="text/javascript" script-name="berkshire-swash" src="http://use.edgefonts.net/berkshire-swash.js"></script>
   <script type="text/javascript" src="../../Content/js/session.js"></script>
+  <script type="text/javascript" src="../../Content/js/dashboard.js"></script>
 
   <!--Esto funciona para cargar el header y/o footer-->
   <script>

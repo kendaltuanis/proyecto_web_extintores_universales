@@ -12,61 +12,34 @@
   <link rel="stylesheet" href="./../../Content/style_footer.css">
   <link rel="stylesheet" href="./../../Content/font-awesome-4.7.0/css/font-awesome.min.css">
 
-
-  <title>Extintores Universales</title>
 </head>
 
 <body>
 
-  <!--Acá se carga el header-->
-  <header data-load="./../Shared/header.html">
-  </header>
-
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <img src="../../Content/images/image-3-index.jpg">
-      </div>
-
-      <div class="item">
-        <img src="../../Content/images/image-2-index.jpg" class="img-responsive" alt="Chicago">
-      </div>
-
-      <div class="item">
-        <img src="../../Content/images/image-4-index.jpg" class="img-responsive" alt="New York">
-      </div>
-    </div>
-
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-        <span class="sr-only">Anterior</span>
-      </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Siguiente</span>
-      </a>
+  <div class="container-fluid"><br/>
+    <div class="table-responsive">
+				<table class="table table-bordered table-responsive" id="tabla_compras">
+					<thead>
+						<tr>
+							<th>Producto </th>
+							<th>Precio </th>
+							<th>Cantidad</th>
+							<th>Fecha </th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+			</div>
   </div>
 
 
-
-  <!--Acá se carga el footer-->
-  <footer data-load="./../Shared/footer.html">
-  </footer>
-
-  <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
   <script type="text/javascript" src="./../../Content/js/libs/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="./../../Content/bootstrap/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="./../../Content/js/libs/modernizr-2.5.3.min.js"></script>
   <script type="text/javascript" script-name="berkshire-swash" src="http://use.edgefonts.net/berkshire-swash.js"></script>
   <script type="text/javascript" src="../../Content/js/session.js"></script>
+  <script type="text/javascript" src="../../Content/js/dashboard.js"></script>
 
   <!--Esto funciona para cargar el header y/o footer-->
   <script>
@@ -93,6 +66,11 @@
         }
       }
     });
+  </script>
+  <script>
+    $(function () {
+      window.onload = Cargar();
+    })
   </script>
 
 </body>
